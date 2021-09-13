@@ -6,10 +6,10 @@ $(function(){
 });
 function mouseScroll(){
     $("#mouse").animate({
-        bottom: "-25"
+        bottom: "-50"
     },"swing",function(){
         $("#mouse").animate({
-            bottom: "-5"
+            bottom: "-40"
         });
     })
 }
@@ -33,12 +33,12 @@ function modal() {
     $("#close_x").click(function(){
         $("#modal").hide();
     });
-    $("#close_ok").click(function(){
+    $("#close_o").click(function(){
         $("#modal").hide();
     });
 }
 function ad(){
-    $(".ad-close").click(function(){
+    $(".ad_close").click(function(){
         $(".ad").hide();
     });
 }
