@@ -175,8 +175,8 @@ ul,ol {
     padding: 0 40px;
 }
 #main {
-    background: url("../images/bg.jpg") no-repeat center / cover;    
-    padding:50px 0;
+    background: url("../images/bg-movie-detail-pattern.png") , url("../images/bg.jpg") no-repeat center / cover;
+    padding:50px 0 100px;
 }
 hgroup {
     max-width: 1100px;
@@ -359,6 +359,62 @@ hgroup h4 {
 #mouse {
     position: absolute;
     left: 50%;
-    bottom: -25px;
+    bottom: -50px;
     transform: translateX(-50%);
+}
+
+#main article:nth-of-type(2) {
+    background: white;
+}
+.benefit-wrap {
+    max-width: 1100px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.benefit-wrap h3 {
+    font-size: 1.125rem;
+    position: relative;
+    margin: 20px 0;
+}
+#benefit {
+    position: absolute;
+    right:0;
+    font-size: 1.250rem;
+    cursor: pointer;
+}
+.fit-box {    
+    overflow: hidden;
+}
+.fit-left {
+    float: left;
+    width: calc(100% - 430px); /* 원래 415px + 여백 15px */
+    position: relative;
+}
+#carousel {
+    height: 285px;
+    overflow: hidden;
+    position: relative;
+}
+#control {
+    position: absolute;
+    bottom: 10px;
+}
+#slide-text {
+    position: absolute;
+}
+#slide-img {
+    position: absolute;
+    right: 0;
+}
+#campaign {
+    display: flex;
+    flex: 1; /* flex item 확대, 축소 */
+}
+#campaign img {
+    max-width: 100%;
+}
+
+.fit-right {
+    width: 415px;
+    float: right;
 }
