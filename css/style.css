@@ -218,6 +218,7 @@ hgroup h4 {
 }
 #best4 > li:hover .info-overlay {
     opacity: 1;
+    background:rgba(0,0,0,.8);
 }
 #best4 .movie-poster {
     border-radius: 5px;
