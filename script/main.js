@@ -4,6 +4,11 @@ $(function(){
     movieExplorer();
     setInterval(mouseScroll, 1500);
 });
+function randomBanner() {
+    let ranNum = Math.ceil(Math.random()*3);
+    let imgTag = "<img src='images/campaign"+ranNum+".jpg' alt='배너'>";
+    $("#campaign li:first").html(imgTag);
+}
 function mouseScroll(){
     $("#mouse").animate({
         bottom: "-50"
